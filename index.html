@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/index.css" />
+        
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="container"> <!-- Main container for the entire content -->
+            <header class="header"> <!-- Header section with title and navigation -->
+                <h2 class="icon-name">TURTAN ZHOMA</h2>
+                <div class="hamburger" id="hamburger" onclick="addRemove()"> <!-- Hamburger menu for mobile -->
+                    &#9776;
+                </div>
+                <nav class="right-site"> <!-- Navigation links -->
+                    <p class="header-options">
+                        <a href="http://127.0.0.1:5500/my_profile/index.html" target="_blank">Home</a>
+                    </p>
+                    <p class="header-options">
+                        <a href="http://127.0.0.1:5500/my_profile/education.html" target="_blank">Education</a>
+                    </p>
+                    <p class="header-options">
+                        <a href="http://127.0.0.1:5500/my_profile/family.html" target="_blank">Family</a>
+                    </p>
+                    <p class="header-options">
+                        <a href="http://127.0.0.1:5500/my_profile/hobbies.html" target="_blank">Hobbies</a>
+                    </p>
+                    <p class="header-options">
+                        <a href="http://127.0.0.1:5500/my_profile/contact.html" target="_blank">Contact</a>
+                    </p>
+                </nav>
+            </header>
+
+            <div class="about-me"> <!-- Section for personal introduction -->
+                <div class="left-site"> <!-- Left part of the about section -->
+                    <h1 class="greetings">hi, i am turtan zhomart.</h1>
+                    <p class="about-me-text"> <!-- Text about Turtan Zhomart -->
+                        My name is Turtan Zhomart, and I am a 19-year-old student at
+                        <span>
+                            <a class="blue" href="https://sdu.edu.kz/language/ru/" target="_blank">SDU.</a></span>
+                        I am passionate about technology, especially in the areas of backend and frontend development, which I am
+                        currently studying. Alongside my studies, I work as a 
+                        <span class="red">
+                            <a href="https://airfocus.com/glossary/what-are-quality-assurance-engineers" class="yellow" target="_blank">QA engineer</a>
+                        </span> at 
+                        <span class="red">
+                            <a href="https://home.kz/" class="red" target="_blank">Home Credit Bank</a>
+                        </span>, where I focus on ensuring the quality of software products.
+                    </p>
+                </div>
+                <div class="right-site"> <!-- Right part of the about section with photo -->
+                    <div class="photo-container"> <!-- Container for profile photo -->
+                        <img class="zhoma_main_photo" src="image/zhoma_main_photo.jpg" alt="Turtan Zhomart" /> <!-- Profile image -->
+                    </div>
+                </div>
+            </div>
+
+            <section class="skills"> <!-- Section showcasing skills -->
+                <h1 class="skills-title">My Skills</h1>
+                <div class="skills-container"> <!-- Container for skill categories -->
+                    <div class="skill-category"> <!-- Category for programming languages -->
+                        <h2><i class="fas fa-code"></i> Programming Languages</h2>
+                        <ul>
+                            <li><i></i> Java</li>
+                            <li><i></i> HTML</li>
+                            <li><i></i> CSS</li>
+                            <li><i></i> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category"> <!-- Category for frameworks and tools -->
+                        <h2><i class="fab fa-java"></i> Frameworks & Tools</h2>
+                        <ul>
+                            <li><i class="fab fa-node-js"></i> Jenkins</li>
+                            <li><i class="fas fa-clipboard-list"></i> Jira</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category"> <!-- Category for databases -->
+                        <h2><i class="fas fa-database"></i> Databases</h2>
+                        <ul>
+                            <li><i class="fas fa-database"></i> MySQL</li>
+                            <li><i class="fas fa-server"></i> PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category"> <!-- Category for development tools -->
+                        <h2><i class="fas fa-rocket"></i> Development Tools</h2>
+                        <ul>
+                            <li><i class="fab fa-github"></i> GitHub</li>
+                            <li><i class="fab fa-docker"></i> Docker</li>
+                            <li><i class="fas fa-vial"></i> Postman</li>
+                            <li><i class="fas fa-bug"></i> Selenium</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="roadmap"> <!-- Section detailing career roadmap -->
+                <h1 class="roadmap-title">My Roadmap</h1>
+                <div class="roadmap-container"> <!-- Container for roadmap steps -->
+                    <div class="roadmap-step"> <!-- Step 1 of the roadmap -->
+                        <i class="fas fa-book"></i>
+                        <h3>Learn Java & Spring</h3>
+                        <p>I started learning Java and Java Spring to dive into backend development.</p>
+                    </div>
+                    <div class="roadmap-step"> <!-- Step 2 of the roadmap -->
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Internship at Home Credit Bank</h3>
+                        <p>I completed an internship at Home Credit Bank, gaining hands-on experience with real projects.</p>
+                    </div>
+                    <div class="roadmap-step"> <!-- Step 3 of the roadmap -->
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Hired as Junior QA Engineer</h3>
+                        <p>After the internship, I was hired as a Junior QA Engineer at Home Credit Bank.</p>
+                    </div>
+                    <div class="roadmap-step"> <!-- Step 4 of the roadmap -->
+                        <i class="fas fa-arrow-up"></i>
+                        <h3>My Next Step</h3>
+                        <p>I am working towards transitioning to a backend developer role by enhancing my skills further.</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        <script>
+            function addRemove(){ // Function to toggle mobile navigation
+                let el = document.querySelector('.right-site')
+                if(el.classList.contains('open')){
+                    el.classList.remove('open')
+                }
+                else el.classList.add('open')
+            }
+        </script>
+    </body>
+</html>

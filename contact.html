@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="style/index.css" /> <!-- Main stylesheet -->
+        <link rel="stylesheet" href="style/contact.css" /> <!-- Contact-specific styles -->
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h2 class="icon-name">TURTAN ZHOMA</h2> <!-- Page title -->
+                <div class="hamburger" id="hamburger" onclick="addRemove()">
+                    &#9776; <!-- Hamburger icon for mobile menu -->
+                </div>
+                <nav class="right-site">
+                    <!-- Navigation links -->
+                    <p class="header-options"><a href="http://127.0.0.1:5500/my_profile/index.html" target="_blank">Home</a></p>
+                    <p class="header-options"><a href="http://127.0.0.1:5500/my_profile/education.html" target="_blank">Education</a></p>
+                    <p class="header-options"><a href="http://127.0.0.1:5500/my_profile/family.html" target="_blank">Family</a></p>
+                    <p class="header-options"><a href="http://127.0.0.1:5500/my_profile/hobbies.html" target="_blank">Hobbies</a></p>
+                    <p class="header-options"><a href="http://127.0.0.1:5500/my_profile/contact.html" target="_blank">Contact</a></p>
+                </nav>
+            </header>
+            <div class="contact about-me">
+                <div class="left-site">
+                    <h1 class="greetings">Let’s connect</h1> <!-- Greeting message -->
+                    <p class="about-me-text">
+                        Reach out anytime at <span class="under-line">zturtan@gmail.com</span>. 
+                        <br>Whether it’s a question or a collaboration idea,
+                        <br> I’ll be sure to respond!
+                    </p>
+                    
+                    <div class="social-icons">
+                        <!-- Social media icons with links -->
+                        <a href="https://www.linkedin.com/in/zhomart-turtan-aa4105293/" target="_blank">
+                            <img src="image/bxl-linkedin.svg.svg" alt="LinkedIn" />
+                        </a>
+                        <a href="https://github.com/httpszhoma" target="_blank">
+                            <img src="image/bxl-github.svg.svg" alt="GitHub" />
+                        </a>
+                        <a href="https://www.instagram.com/https.zhoma/" target="_blank">
+                            <img src="image/bxl-instagram.svg.svg" alt="Instagram" />
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="right-site">
+                    <form class="contact-form">
+                        <!-- Contact form fields -->
+                        <div class="label-div"><label for="name">Name</label></div>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+                        <div class="label-div"><label for="email">Email</label></div>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+                        <div class="label-div"><label for="subject">Subject</label></div>
+                        <input type="text" id="subject" name="subject" placeholder="Enter the subject" />
+
+                        <div class="label-div"><label for="message">Message</label></div>
+                        <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+
+                        <button type="submit" class="submit-btn">SUBMIT</button> <!-- Submit button -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Function to toggle mobile menu visibility
+            function addRemove(){
+                let el = document.querySelector('.right-site')
+                if(el.classList.contains('open')){
+                    el.classList.remove('open') // Hide menu
+                }
+                else el.classList.add('open') // Show menu
+            }
+        </script>
+        
+    </body>
+</html>

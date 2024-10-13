@@ -1,0 +1,86 @@
+.family-introduction {
+    font-size: 18px; 
+    color: white; 
+    margin-bottom: 40px; 
+    text-align: center; 
+    font-family: "Manrope", sans-serif; 
+    line-height: 1.5; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+} /* Styles for the introductory text about the family */
+
+.family {
+    width: 60%; 
+    padding: 40px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    margin-top: 20px; 
+} /* Main container for the family section */
+
+.family h1 {
+    font-size: 42px; 
+    font-family: "Bebas Neue"; 
+    color: white; 
+    text-align: center; 
+    margin-bottom: 40px; 
+} /* Heading for the family section */
+
+.family-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+} /* Grid layout for family member cards */
+
+.family-card {
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+    color: white; 
+    transition: background 0.3s; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} /* Card layout for each family member */
+
+.family-card i {
+    font-size: 40px; 
+    margin-bottom: 10px; 
+} /* Icon styles within family cards */
+
+.family-card h3 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    font-family: "Bebas Neue"; 
+    letter-spacing: 0.1cap; 
+} /* Heading styles within family cards */
+
+.family-card p {
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    color: rgba(255, 255, 255, 0.8); 
+    font-family: "Manrope"; 
+} /* Text styles within family cards */
+
+.mother-card {
+    background-color: #c97a66; 
+} /* Card styling for mother */
+
+.father-card {
+    background-color: #80b3ff; 
+} /* Card styling for father */
+
+.brother-card {
+    background-color: #80ff80; 
+} /* Card styling for brothers */
+
+.me-card {
+    background-color: #ffcc66; 
+} /* Card styling for self */
+
+.sister-card {
+    background-color: #cc99ff; 
+} /* Card styling for little sister */
+
+.baby-card {
+    background-color: #ff9999; 
+} /* Card styling for baby brother */

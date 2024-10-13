@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hobbies - Turtan Zhomart</title>
+
+
+        <link rel="stylesheet" href="style/hobbies.css" />
+        <link rel="stylesheet" href="style/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h2 class="icon-name">TURTAN ZHOMA</h2>
+                <div class="hamburger" id="hamburger" onclick="addRemove()">
+                    &#9776;
+                </div>
+                <nav class="right-site">
+                    <p class="header-options">
+                        <a
+                            href="http://127.0.0.1:5500/my_profile/index.html"
+                            target="_blank"
+                            >Home</a
+                        >
+                    </p>
+                    <p class="header-options">
+                        <a
+                            href="http://127.0.0.1:5500/my_profile/education.html"
+                            target="_blank"
+                            >Education</a
+                        >
+                    </p>
+                    <p class="header-options">
+                        <a
+                            href="http://127.0.0.1:5500/my_profile/family.html"
+                            target="_blank"
+                            >Family</a
+                        >
+                    </p>
+                    <p class="header-options">
+                        <a
+                            href="http://127.0.0.1:5500/my_profile/hobbies.html"
+                            target="_blank"
+                            >Hobbies</a
+                        >
+                    </p>
+                    <p class="header-options">
+                        <a
+                            href="http://127.0.0.1:5500/my_profile/contact.html"
+                            target="_blank"
+                            >Contact</a
+                        >
+                    </p>
+                </nav>
+            </header>
+
+            <div class="hobbies">
+                <h1 class="section-title">My Hobbies</h1>
+                <div class="hobbies-grid">
+                    <div class="hobby-item">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Mountain Climbing</h3>
+                        <p>
+                            Exploring nature and challenging myself with every
+                            climb.
+                        </p>
+                        <img src="image/mountain.jpg" alt="Mountain Climbing" />
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Gym Workouts</h3>
+                        <p>
+                            Staying fit and healthy by hitting the gym
+                            regularly.
+                        </p>
+                        <img src="image/gym.jpg" alt="Gym Workouts" />
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Video Gaming</h3>
+                        <p>
+                            Diving into virtual worlds and enjoying epic
+                            adventures.
+                        </p>
+                        <img src="image/video-game.webp" alt="Video Gaming" />
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-film"></i>
+                        <h3>Watching Cinema</h3>
+                        <p>Relaxing with movies and discovering new films.</p>
+                        <img src="image/cinema.webp" alt="Watching Cinema" />
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fab fa-youtube"></i>
+                        <h3>Watching YouTube</h3>
+                        <p>
+                            Following my favorite creators and learning new
+                            things.
+                        </p>
+                        <img src="image/youtube.png" alt="Watching YouTube" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function addRemove(){
+                let el = document.querySelector('.right-site')
+                if(el.classList.contains('open')){
+                    el.classList.remove('open')
+                }
+                else el.classList.add('open')
+            }
+        </script>
+    </body>
+</html>

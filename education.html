@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Turtan Zhomart</title>
+    <link rel="stylesheet" href="style/education.css">
+
+    <link rel="stylesheet" href="style/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container"> <!-- Main container wrapping the entire page content -->
+        <header class="header"> <!-- Header section containing the site title and navigation -->
+            <h2 class="icon-name">TURTAN ZHOMA</h2> <!-- Displays the name in the header -->
+            <div class="hamburger" id="hamburger" onclick="addRemove()"> <!-- Hamburger icon for mobile navigation -->
+                &#9776;
+            </div>
+            <nav class="right-site"> <!-- Navigation links for different sections of the site -->
+                <p class="header-options"> <!-- Individual navigation option for 'Home' -->
+                    <a
+                        href="http://127.0.0.1:5500/my_profile/index.html"
+                        target="_blank"
+                        >Home</a
+                    >
+                </p>
+                <p class="header-options"> <!-- Individual navigation option for 'Education' -->
+                    <a
+                        href="http://127.0.0.1:5500/my_profile/education.html"
+                        target="_blank"
+                        >Education</a
+                    >
+                </p>
+                <p class="header-options"> <!-- Individual navigation option for 'Family' -->
+                    <a
+                        href="http://127.0.0.1:5500/my_profile/family.html"
+                        target="_blank"
+                        >Family</a
+                    >
+                </p>
+                <p class="header-options"> <!-- Individual navigation option for 'Hobbies' -->
+                    <a
+                        href="http://127.0.0.1:5500/my_profile/hobbies.html"
+                        target="_blank"
+                        >Hobbies</a
+                    >
+                </p>
+                <p class="header-options"> <!-- Individual navigation option for 'Contact' -->
+                    <a
+                        href="http://127.0.0.1:5500/my_profile/contact.html"
+                        target="_blank"
+                        >Contact</a
+                    >
+                </p>
+            </nav>
+        </header>
+        <div class="education about-me"> <!-- Main section for the education page content -->
+            <h1 class="section-title">My Education Journey</h1> <!-- Title of the education section -->
+            <div class="education-timeline"> <!-- Timeline section to visually represent educational milestones -->
+                <div class="timeline-item"> <!-- Individual timeline item for an education stage -->
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> <!-- Icon representing the stage -->
+                    <div class="timeline-content"> <!-- Content block displaying details of the education stage -->
+                        <h3>Urbulak Simple School</h3>
+                        <p>Completed education with honors.</p>
+                        <span class="date">2011 - 2022</span> <!-- Date associated with the stage -->
+                    </div>
+                </div>
+                <div class="timeline-item"> <!-- Individual timeline item for SDU University -->
+                    <div class="timeline-icon"><i class="fas fa-university"></i></div> <!-- Icon for SDU -->
+                    <div class="timeline-content"> <!-- SDU education details -->
+                        <h3>SDU University</h3>
+                        <p>Pursuing a Bachelor's degree in Information Systems.</p>
+                        <span class="date">2022 - Present</span> <!-- Date of attendance at SDU -->
+                    </div>
+                </div>
+                <div class="timeline-item"> <!-- Individual timeline item for Home Credit internship -->
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> <!-- Icon for internship -->
+                    <div class="timeline-content"> <!-- Internship details -->
+                        <h3>Internship at Home Credit</h3>
+                        <p>Gained practical experience in a professional environment.</p>
+                        <span class="date">July - September 2024</span> <!-- Date of internship -->
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="milestones-title">Key Milestones</h2> <!-- Section title for key milestones -->
+            <table class="milestones-table"> <!-- Table for listing key milestones -->
+                <thead>
+                    <tr>
+                        <th>Year</th> <!-- Table column header for the year -->
+                        <th>Milestone</th> <!-- Table column header for the milestone description -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> <!-- Row for a specific milestone -->
+                        <td>2022</td> <!-- Year column -->
+                        <td>Graduated from Urbulak Simple School</td> <!-- Milestone description -->
+                    </tr>
+                    <tr> <!-- Another row for a milestone -->
+                        <td>2022</td>
+                        <td>Enrolled in SDU University</td>
+                    </tr>
+                    <tr> <!-- Milestone for a programming course -->
+                        <td>2024</td>
+                        <td>Completed my first programming course</td>
+                    </tr>
+                    <tr> <!-- Internship milestone -->
+                        <td>2024</td>
+                        <td>Internship at Home Credit</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <h2 class="subjects-title">Subjects Studied</h2> <!-- Section title for subjects studied -->
+            <ul class="subjects-list"> <!-- List of subjects covered during the education -->
+                <li><i class="fas fa-book"></i> Data Structures and Algorithms</li> <!-- Individual subject -->
+                <li><i class="fas fa-book"></i> Database Management Systems</li>
+                <li><i class="fas fa-book"></i> Web Development</li>
+                <li><i class="fas fa-book"></i> Software Engineering</li>
+                <li><i class="fas fa-book"></i> Mobile Application Development</li>
+                <li><i class="fas fa-book"></i> Java Programming</li>
+                <li><i class="fas fa-book"></i> Cisco Networking</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function addRemove(){ <!-- Function to toggle the mobile navigation menu -->
+            let el = document.querySelector('.right-site')
+            if(el.classList.contains('open')){
+                el.classList.remove('open')
+            }
+            else el.classList.add('open')
+        }
+    </script>
+</body>
+</html>

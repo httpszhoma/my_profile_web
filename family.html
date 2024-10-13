@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <link rel="stylesheet" href="style/index.css"> <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="style/family.css"> <!-- Link to family-specific stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2 class="icon-name">TURTAN ZHOMA</h2> <!-- Header with name -->
+            <div class="hamburger" id="hamburger" onclick="addRemove()"> <!-- Hamburger menu for navigation -->
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <nav class="right-site"> <!-- Navigation links -->
+                <p class="header-options">
+                    <a href="http://127.0.0.1:5500/my_profile/index.html" target="_blank">Home</a>
+                </p>
+                <p class="header-options">
+                    <a href="http://127.0.0.1:5500/my_profile/education.html" target="_blank">Education</a>
+                </p>
+                <p class="header-options">
+                    <a href="http://127.0.0.1:5500/my_profile/family.html" target="_blank">Family</a>
+                </p>
+                <p class="header-options">
+                    <a href="http://127.0.0.1:5500/my_profile/hobbies.html" target="_blank">Hobbies</a>
+                </p>
+                <p class="header-options">
+                    <a href="http://127.0.0.1:5500/my_profile/contact.html" target="_blank">Contact</a>
+                </p>
+            </nav>
+        </header>
+
+        <div class="family"> <!-- Main content area for family section -->
+            <h1>Meet My Family</h1> <!-- Family section heading -->
+            <p class="family-introduction"> <!-- Introduction paragraph about family -->
+                I come from a close-knit family that has always supported and encouraged me in my endeavors. 
+                My mother, Dariga, is a dedicated biology teacher who inspires students to explore the wonders of life. 
+                My father, Usen, is a skilled mechanic, always ready to fix anything and teach us the value of hard work. 
+                I have three brothers: Nurseit, the oldest, works as an investigator; Yerseit, a passionate math teacher; 
+                and Bakdaulet, who shares my mother’s love for biology as a teacher. My little sister, Kamshat, is currently a school student, and I have a baby brother, Nurgisa, who is just 4 months old. 
+                Together, we share many memories and adventures, and I am grateful for each one of them.
+            </p>
+            <div class="family-grid"> <!-- Grid layout for family cards -->
+                <div class="family-card mother-card"> <!-- Card for mother -->
+                    <i class="fas fa-flask"></i> <!-- Icon for mother -->
+                    <h3>Dariga Mahanova</h3>
+                    <p>Mother - Biology Teacher</p>
+                </div>
+                <div class="family-card father-card"> <!-- Card for father -->
+                    <i class="fas fa-tools"></i> <!-- Icon for father -->
+                    <h3>Usen Telgara</h3>
+                    <p>Father - Mechanic</p>
+                </div>
+                <div class="family-card brother-card"> <!-- Card for oldest brother -->
+                    <i class="fas fa-user-tie"></i> <!-- Icon for oldest brother -->
+                    <h3>Nurseit Telgara</h3>
+                    <p>Older Brother - Investigator</p>
+                </div>
+                <div class="family-card brother-card"> <!-- Card for second brother -->
+                    <i class="fas fa-square-root-alt"></i> <!-- Icon for second brother -->
+                    <h3>Yerseit Turtan</h3>
+                    <p>Second Brother - Math Teacher</p>
+                </div>
+                <div class="family-card brother-card"> <!-- Card for third brother -->
+                    <i class="fas fa-leaf"></i> <!-- Icon for third brother -->
+                    <h3>Bakdaulet Turtan</h3>
+                    <p>Third Brother - Biology Teacher</p>
+                </div>
+                <div class="family-card me-card"> <!-- Card for self -->
+                    <i class="fas fa-laptop-code"></i> <!-- Icon for self -->
+                    <h3>Zhomart Turtan</h3>
+                    <p>Me - Future Developer</p>
+                </div>
+                <div class="family-card sister-card"> <!-- Card for little sister -->
+                    <i class="fas fa-school"></i> <!-- Icon for little sister -->
+                    <h3>Kamshat Turtan</h3>
+                    <p>Little Sister - School Student</p>
+                </div>
+                <div class="family-card baby-card"> <!-- Card for baby brother -->
+                    <i class="fas fa-baby"></i> <!-- Icon for baby brother -->
+                    <h3>Nurgisa Usen</h3>
+                    <p>Little Brother - 4 months old</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addRemove(){ // Function to toggle the navigation menu
+            let el = document.querySelector('.right-site') // Select the navigation element
+            if(el.classList.contains('open')){ // Check if it has the 'open' class
+                el.classList.remove('open') // Remove the 'open' class
+            }
+            else el.classList.add('open') // Add the 'open' class
+        }
+    </script>
+</body>
+</html>

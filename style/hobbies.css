@@ -1,0 +1,112 @@
+:root {
+    --primary-color: rgba(34, 31, 31, 1); /* Main background color for the site */
+    --text-color: rgba(199, 199, 199, 1); /* Color for primary text */
+    --white: white; /* Standard white color for elements */
+    --blue-glow: rgba(159, 174, 255, 0.8); /* Glowing effect color */
+}
+
+body {
+    font-family: "Inter", sans-serif; /* Font style for body text */
+    background-color: var(--primary-color); /* Set the background color */
+    color: var(--text-color); /* Set text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
+    max-width: 80%; /* Maximum width of the container */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Inner spacing for the container */
+}
+
+.icon-name {
+    font-family: "Bebas Neue", sans-serif; /* Font style for icon names */
+    font-size: 36px; /* Font size for icon names */
+    color: var(--white); /* Color for icon names */
+}
+
+.right-site {
+    display: flex; /* Flexbox layout for alignment */
+    gap: 20px; /* Space between flex items */
+}
+
+.header-options a {
+    color: var(--text-color); /* Color for header links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size for header links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header-options a:hover {
+    color: var(--white); /* Change color on hover */
+}
+
+.hobbies {
+    padding: 40px; /* Inner padding for hobbies section */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color for hobbies */
+    border-radius: 10px; /* Rounded corners for hobbies section */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Shadow effect for depth */
+    margin-top: 20px; /* Space above hobbies section */
+}
+
+.section-title {
+    font-size: 42px; /* Font size for section titles */
+    color: var(--white); /* Color for section titles */
+    text-align: center; /* Center-align the section titles */
+    margin-bottom: 30px; /* Space below section titles */
+}
+
+.hobbies-grid {
+    display: grid; /* Use grid layout for hobbies */
+    justify-content: center; /* Center the grid items */
+    grid-gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+}
+
+@media (max-width: 900px) {
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .hobbies-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+.hobby-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Background for individual hobbies */
+    padding: 20px; /* Inner padding for hobby items */
+    border-radius: 10px; /* Rounded corners for hobby items */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+    text-align: center; /* Center text in hobby items */
+}
+
+.hobby-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
+}
+
+.hobby-item i {
+    font-size: 40px; /* Font size for hobby icons */
+    color: var(--blue-glow); /* Color for hobby icons */
+    margin-bottom: 10px; /* Space below icons */
+}
+
+.hobby-item h3 {
+    font-size: 24px; /* Font size for hobby item headings */
+    color: var(--white); /* Color for hobby item headings */
+}
+
+.hobby-item p {
+    font-size: 16px; /* Font size for hobby item descriptions */
+    color: var(--text-color); /* Color for hobby item descriptions */
+    margin: 10px 0; /* Space above and below descriptions */
+}
+
+.hobby-item img {
+    width: 100%; /* Full width for images */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-top: 10px; /* Space above images */
+    object-fit: cover; /* Ensure images cover their containers */
+}

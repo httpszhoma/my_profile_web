@@ -1,0 +1,130 @@
+.under-line { 
+    /* Adds a solid underline with custom color and removes default text decoration */ 
+    border-bottom: 2px solid rgba(211, 233, 122, 1);
+    text-decoration: none;
+}
+
+.contact { 
+    /* Flex container for contact section, wraps items and adds a gap */ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.contact .left-site { 
+    /* Ensures minimum width for the left section of the contact area */ 
+    min-width: 250px;
+}
+
+.contact .right-site { 
+    /* Sets minimum width for the right section of the contact area */ 
+    min-width: 300px;
+    width: 40%;
+}
+
+.social-icons { 
+    /* Flex container for social media icons, evenly spaced and constrained to 30% width */ 
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.social-icons a { 
+    /* Defines styling for social icon links, including margin and position */ 
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.social-icons img { 
+    /* Sets initial size and color filter for social icon images, with smooth transitions */ 
+    width: 35px;
+    filter: sepia(1) saturate(5) hue-rotate(70deg);
+    transition: filter 0.3s, width 0.3s;
+}
+
+.social-icons a:hover img { 
+    /* Removes filter and increases size on hover for a smooth interaction effect */ 
+    filter: none;
+    width: 38px;
+}
+
+.social-icons a:hover { 
+    /* Adds a glowing box-shadow and rounded corners when hovering over social links */ 
+    box-shadow: 0 0 5px rgba(211, 233, 122, 1),
+        0 0 10px rgba(211, 233, 122, 0.5);
+    border-radius: 5px;
+}
+
+.contact-form { 
+    /* Sets up a flexbox layout for the form with center alignment, gap, and styling */ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.contact .label-div { 
+    /* Container for labels, spans full width of the form */ 
+    display: flex;
+    width: 100%;
+}
+
+.contact-form label { 
+    /* Defines label styling for form elements including font, size, and color */ 
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form input, 
+.contact-form textarea { 
+    /* Sets input and textarea styles including padding, color, and background */ 
+    width: 100%;
+    padding: 10px;
+    font-family: "Manrope";
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form textarea { 
+    /* Enables vertical resizing for textareas */ 
+    resize: vertical;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus { 
+    /* Adds focus effect with glowing border and shadow */ 
+    border-color: var(--blue-glow);
+    box-shadow: 0 0 10px var(--blue-glow);
+}
+
+.contact-form .submit-btn { 
+    /* Styles the submit button with padding, background color, and smooth transition */ 
+    background-color: rgba(233, 244, 118, 1);
+    color: var(--primary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Manrope";
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+    text-align: center;
+}
+
+.contact-form .submit-btn:hover { 
+    /* Changes button background color slightly on hover */ 
+    background-color: rgba(233, 244, 118, 0.8);
+}

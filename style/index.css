@@ -1,0 +1,362 @@
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+
+/* CSS Variables */
+:root {
+    --primary-color: rgba(34, 31, 31, 1); /* Main background color */
+    --text-color: rgba(199, 199, 199, 1); /* Default text color */
+    --white: white; /* White color */
+    --blue-glow: rgba(159, 174, 255, 0.8); /* Blue glow effect */
+    --red-glow: rgba(255, 127, 127, 0.8); /* Red glow effect */
+}
+
+/* Anchor Links */
+a {
+    color: var(--text-color);
+}
+
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Background */
+body {
+    background-color: var(--primary-color);
+}
+
+/* Headings and Paragraphs */
+p,
+h2,
+h1 {
+    color: var(--text-color);
+}
+h1 {
+    color: var(--white);
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 30px;
+    position: relative;
+    border-bottom: 2px solid var(--blue-glow);
+
+}
+
+
+/* Right Site in Header */
+.header .right-site {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 8%;
+    align-items: center;
+}
+
+/* Icon Name Styles */
+.icon-name {
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    color: var(--text-color);
+    text-shadow: 0 0 10px var(--blue-glow);
+}
+
+/* Right Site Paragraph Styles */
+.header .right-site p {
+    cursor: pointer;
+    font-family: "Inter";
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 0 0 10px var(--red-glow);
+    
+}
+.header .right-site a{
+    text-decoration: none;
+}
+
+/* Right Site Paragraph Hover Effect */
+.header .right-site p:hover {
+    color: var(--white);
+    transition: 150ms;
+    font-size: 17px;
+    text-shadow: 0 0 20px var(--white);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header .right-site {
+        display: none; /* Hide on mobile */
+    }
+    .open {
+        display: flex !important; /* Show mobile menu */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 20%;
+        border-radius: 5%;
+        box-shadow: 0 0 5px rgba(211, 233, 122, 1), 0 0 10px rgba(211, 233, 122, 0.5);
+        background-color: rgba(6, 1, 1, 0.9);
+        z-index: 1000;
+    }
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+    .header-options {
+        text-align: center;
+    }
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Left Site of About Me */
+.about-me .left-site {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Right Site of About Me */
+.about-me .right-site {
+    display: flex;
+}
+
+/* Photo Container Styles */
+.photo-container {
+    overflow: hidden;
+    border-radius: 10%;
+    border: 3px solid var(--red-glow);
+    box-shadow: 0 0 15px var(--red-glow);
+}
+
+/* Main Photo Hover Effect */
+.zhoma_main_photo {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.zhoma_main_photo:hover {
+    transform: scale(1.1);
+}
+
+/* Greetings Text */
+.greetings {
+    font-family: "Bebas Neue";
+    font-size: 101px;
+    color: var(--white);
+    text-shadow: 0 0 10px var(--blue-glow);
+}
+
+/* About Me Text */
+.about-me-text {
+    font-family: "Manrope";
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 150%;
+}
+
+/* Color Classes */
+.blue {
+    color: var(--blue-glow);
+    text-decoration: underline;
+    text-shadow: 0 0 8px var(--blue-glow);
+}
+.red {
+    color: var(--red-glow);
+    text-decoration: underline;
+    text-shadow: 0 0 8px var(--red-glow);
+}
+.yellow {
+    color: rgba(233, 244, 118, 1);
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(233, 244, 118, 0.8);
+}
+
+/* Skills Section */
+.skills {
+    width: 80%;
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Skills Title */
+.skills-title {
+    font-family: "Bebas Neue";
+    font-size: 60px;
+    color: var(--white);
+    text-shadow: 0 0 10px var(--blue-glow);
+    margin-bottom: 30px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Skill Category Styles */
+.skill-category {
+    flex: 1;
+    min-width: 220px; /* Responsive minimum width */
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Skill Category Header */
+.skill-category h2 {
+    font-family: "Inter";
+    font-size: 24px;
+    color: var(--white);
+    text-shadow: 0 0 10px var(--blue-glow);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Skill Category List */
+.skill-category ul {
+    list-style-type: none;
+    font-family: "Manrope";
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+.skill-category li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+.skill-category li:hover {
+    color: var(--blue-glow);
+}
+
+/* Roadmap Section */
+.roadmap {
+    width: 80%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Roadmap Title */
+.roadmap-title {
+    font-family: "Bebas Neue";
+    font-size: 60px;
+    color: var(--white);
+    text-shadow: 0 0 10px var(--blue-glow);
+    margin-bottom: 30px;
+}
+
+/* Roadmap Container */
+.roadmap-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Individual Roadmap Step */
+.roadmap-step {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Roadmap Step Icon */
+.roadmap-step i {
+    font-size: 40px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+/* Roadmap Step Description */
+.roadmap-step h3 {
+    font-family: "Bebas Neue";
+    letter-spacing: 0.05cm;
+    font-size: 24px;
+    color: var(--white);
+}
+
+/* Roadmap Step Details */
+.roadmap-step p {
+    font-family: "Inter";
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer Text */
+.footer p {
+    color: var(--text-color);
+    font-family: "Manrope";
+}
+
+/* Copyright Styles */
+.footer p span {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--blue-glow);
+}
